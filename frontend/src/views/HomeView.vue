@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import ColorNationNFTList from '@/components/ColorNationNFTList.vue';
-import MintColorNation from '@/components/MintColorNation.vue';
-
+import ColorNationPage from '@/components/ColorNationPage.vue'
 </script>
 
 <template>
   <div class="page-home">
-    <h1>asdas</h1>
-    <MintColorNation />
-    <ColorNationNFTList />
+    <ColorNationPage />
   </div>
 </template>
+
+

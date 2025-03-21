@@ -25,15 +25,14 @@ export default {
   }),
   methods: {
     async mintColorNation() {
-      console.log('Minting')
       const contract = await getContract()
-      console.log('Contract', contract)
       const tx = await contract.mintCountry(
         this.country,
         TEST_URL_FOR_COUNTRY?.[this.country] || 'no-url',
       )
       await tx.wait()
-      console.log('DONE')
+
+      this.$emit('reloadList')
     },
   },
 }
